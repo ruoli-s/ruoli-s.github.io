@@ -5,12 +5,26 @@
     
     <entry>
       <title>page</title>
-      <link href="2020/11/17/page/"/>
-      <url>2020/11/17/page/</url>
+      <link href="posts/5a1.html"/>
+      <url>posts/5a1.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="今天是个好日子"><a href="#今天是个好日子" class="headerlink" title="今天是个好日子"></a>今天是个好日子</h1><ul><li>1</li><li>2</li><li>3<h2 id="洋气"><a href="#洋气" class="headerlink" title="洋气"></a>洋气</h2><a href="www.jd.com">点这里</a></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 2020 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,16 +32,22 @@
     
     <entry>
       <title>PTE考试框架</title>
-      <link href="2020/11/17/pte-kao-shi-kuang-jia/"/>
-      <url>2020/11/17/pte-kao-shi-kuang-jia/</url>
+      <link href="posts/ea61.html"/>
+      <url>posts/ea61.html</url>
       
         <content type="html"><![CDATA[<p>@<a href="">TOC</a></p><h2 id="第1章-知识类：WEB安全基础"><a href="#第1章-知识类：WEB安全基础" class="headerlink" title="第1章  知识类：WEB安全基础"></a>第1章  知识类：WEB安全基础</h2><h3 id="1-1-知识体：HTTP协议"><a href="#1-1-知识体：HTTP协议" class="headerlink" title="1.1 知识体：HTTP协议"></a>1.1 知识体：HTTP协议</h3><h4 id="1-1-1-知识域：HTTP请求方法"><a href="#1-1-1-知识域：HTTP请求方法" class="headerlink" title="1.1.1 知识域：HTTP请求方法"></a><a href="https://www.baidu.com/">1.1.1 知识域：HTTP请求方法</a></h4><h4 id="1-1-2-知识域：HTTP状态码"><a href="#1-1-2-知识域：HTTP状态码" class="headerlink" title="1.1.2 知识域：HTTP状态码"></a>1.1.2 知识域：HTTP状态码</h4><h4 id="1-1-3-知识域：HTTP响应头信息"><a href="#1-1-3-知识域：HTTP响应头信息" class="headerlink" title="1.1.3 知识域：HTTP响应头信息"></a>1.1.3 知识域：HTTP响应头信息</h4><h4 id="1-1-4-知识域：HTTP协议中的URL"><a href="#1-1-4-知识域：HTTP协议中的URL" class="headerlink" title="1.1.4  知识域：HTTP协议中的URL"></a>1.1.4  知识域：HTTP协议中的URL</h4><h3 id="1-2-知识体：注入漏洞"><a href="#1-2-知识体：注入漏洞" class="headerlink" title="1.2 知识体：注入漏洞"></a>1.2 知识体：注入漏洞</h3><h4 id="1-2-1-知识域：SQL注入"><a href="#1-2-1-知识域：SQL注入" class="headerlink" title="1.2.1 知识域：SQL注入"></a>1.2.1 知识域：SQL注入</h4><h4 id="1-2-2-知识域：XML注入"><a href="#1-2-2-知识域：XML注入" class="headerlink" title="1.2.2 知识域：XML注入"></a>1.2.2 知识域：XML注入</h4><h4 id="1-2-3-知识域：代码注入"><a href="#1-2-3-知识域：代码注入" class="headerlink" title="1.2.3 知识域：代码注入"></a>1.2.3 知识域：代码注入</h4><h3 id="1-3-知识体：XSS漏洞"><a href="#1-3-知识体：XSS漏洞" class="headerlink" title="1.3 知识体：XSS漏洞"></a>1.3 知识体：XSS漏洞</h3><h4 id="1-3-1-知识域：存储式XSS漏洞"><a href="#1-3-1-知识域：存储式XSS漏洞" class="headerlink" title="1.3.1 知识域：存储式XSS漏洞"></a>1.3.1 知识域：存储式XSS漏洞</h4><h4 id="1-3-2-知识域：反射式XSS漏洞"><a href="#1-3-2-知识域：反射式XSS漏洞" class="headerlink" title="1.3.2 知识域：反射式XSS漏洞"></a>1.3.2 知识域：反射式XSS漏洞</h4><h4 id="1-3-3-知识域：DOM式XSS漏洞"><a href="#1-3-3-知识域：DOM式XSS漏洞" class="headerlink" title="1.3.3 知识域：DOM式XSS漏洞"></a>1.3.3 知识域：DOM式XSS漏洞</h4><h3 id="1-4-知识体：请求伪造漏洞"><a href="#1-4-知识体：请求伪造漏洞" class="headerlink" title="1.4 知识体：请求伪造漏洞"></a>1.4 知识体：请求伪造漏洞</h3><h4 id="1-4-2-知识域：SSRF漏洞"><a href="#1-4-2-知识域：SSRF漏洞" class="headerlink" title="1.4.2 知识域：SSRF漏洞"></a>1.4.2 知识域：SSRF漏洞</h4><h4 id="1-4-2-知识域：CSRF漏洞"><a href="#1-4-2-知识域：CSRF漏洞" class="headerlink" title="1.4.2 知识域：CSRF漏洞"></a>1.4.2 知识域：CSRF漏洞</h4><h3 id="1-5-知识体：文件处理漏洞"><a href="#1-5-知识体：文件处理漏洞" class="headerlink" title="1.5 知识体：文件处理漏洞"></a>1.5 知识体：文件处理漏洞</h3><h4 id="1-5-1-知识域：任意文件上传"><a href="#1-5-1-知识域：任意文件上传" class="headerlink" title="1.5.1 知识域：任意文件上传"></a>1.5.1 知识域：任意文件上传</h4><h4 id="1-5-2-知识域：任意文件下载"><a href="#1-5-2-知识域：任意文件下载" class="headerlink" title="1.5.2 知识域：任意文件下载"></a>1.5.2 知识域：任意文件下载</h4><h3 id="1-6-知识体：访问控制漏洞"><a href="#1-6-知识体：访问控制漏洞" class="headerlink" title="1.6 知识体：访问控制漏洞"></a>1.6 知识体：访问控制漏洞</h3><h4 id="1-6-1-知识域：横向越权"><a href="#1-6-1-知识域：横向越权" class="headerlink" title="1.6.1 知识域：横向越权"></a>1.6.1 知识域：横向越权</h4><h4 id="1-6-2-知识域：垂直越权"><a href="#1-6-2-知识域：垂直越权" class="headerlink" title="1.6.2 知识域：垂直越权"></a>1.6.2 知识域：垂直越权</h4><h3 id="1-7-知识体：会话管理漏洞"><a href="#1-7-知识体：会话管理漏洞" class="headerlink" title="1.7 知识体：会话管理漏洞"></a>1.7 知识体：会话管理漏洞</h3><h4 id="1-7-1-知识域：会话劫持"><a href="#1-7-1-知识域：会话劫持" class="headerlink" title="1.7.1 知识域：会话劫持"></a>1.7.1 知识域：会话劫持</h4><h4 id="1-7-2-知识域：会话固定"><a href="#1-7-2-知识域：会话固定" class="headerlink" title="1.7.2 知识域：会话固定"></a>1.7.2 知识域：会话固定</h4><h2 id="第2章-知识类：中间件安全基础"><a href="#第2章-知识类：中间件安全基础" class="headerlink" title="第2章 知识类：中间件安全基础"></a>第2章 知识类：中间件安全基础</h2><h3 id="2-1知识体：主流的中间件"><a href="#2-1知识体：主流的中间件" class="headerlink" title="2.1知识体：主流的中间件"></a>2.1知识体：主流的中间件</h3><h4 id="2-1-1-知识域：Apache"><a href="#2-1-1-知识域：Apache" class="headerlink" title="2.1.1 知识域：Apache"></a>2.1.1 知识域：Apache</h4><h4 id="2-1-2-知识域：IIS"><a href="#2-1-2-知识域：IIS" class="headerlink" title="2.1.2 知识域：IIS"></a>2.1.2 知识域：IIS</h4><h4 id="2-1-3-知识域：Tomcat"><a href="#2-1-3-知识域：Tomcat" class="headerlink" title="2.1.3 知识域：Tomcat"></a>2.1.3 知识域：Tomcat</h4><h3 id="2-2-知识体：JAVA开发的中间件"><a href="#2-2-知识体：JAVA开发的中间件" class="headerlink" title="2.2 知识体：JAVA开发的中间件"></a>2.2 知识体：JAVA开发的中间件</h3><h4 id="2-2-1-知识域：Weblogic"><a href="#2-2-1-知识域：Weblogic" class="headerlink" title="2.2.1 知识域：Weblogic"></a>2.2.1 知识域：Weblogic</h4><h4 id="2-2-2-知识域：Websphere"><a href="#2-2-2-知识域：Websphere" class="headerlink" title="2.2.2 知识域：Websphere"></a>2.2.2 知识域：Websphere</h4><h4 id="2-2-3-知识域：Jboss"><a href="#2-2-3-知识域：Jboss" class="headerlink" title="2.2.3 知识域：Jboss"></a>2.2.3 知识域：Jboss</h4><h2 id="第3章-知识类：操作系统安全基础"><a href="#第3章-知识类：操作系统安全基础" class="headerlink" title="第3章 知识类：操作系统安全基础"></a>第3章 知识类：操作系统安全基础</h2><h3 id="3-1-知识体：Windows操作系统"><a href="#3-1-知识体：Windows操作系统" class="headerlink" title="3.1 知识体：Windows操作系统"></a>3.1 知识体：Windows操作系统</h3><h4 id="3-1-1-知识域：账户安全"><a href="#3-1-1-知识域：账户安全" class="headerlink" title="3.1.1 知识域：账户安全"></a>3.1.1 知识域：账户安全</h4><h4 id="3-1-2-知识域：文件系统安全"><a href="#3-1-2-知识域：文件系统安全" class="headerlink" title="3.1.2 知识域：文件系统安全"></a>3.1.2 知识域：文件系统安全</h4><h4 id="3-1-3-知识域：日志分析"><a href="#3-1-3-知识域：日志分析" class="headerlink" title="3.1.3 知识域：日志分析"></a>3.1.3 知识域：日志分析</h4><h3 id="3-2-知识体：Linux操作系统"><a href="#3-2-知识体：Linux操作系统" class="headerlink" title="3.2 知识体：Linux操作系统"></a>3.2 知识体：Linux操作系统</h3><h4 id="3-2-1-知识域：账户安全"><a href="#3-2-1-知识域：账户安全" class="headerlink" title="3.2.1 知识域：账户安全"></a>3.2.1 知识域：账户安全</h4><h4 id="3-2-2-知识域：文件系统安全"><a href="#3-2-2-知识域：文件系统安全" class="headerlink" title="3.2.2 知识域：文件系统安全"></a>3.2.2 知识域：文件系统安全</h4><h4 id="3-2-3-知识域：日志分析"><a href="#3-2-3-知识域：日志分析" class="headerlink" title="3.2.3 知识域：日志分析"></a>3.2.3 知识域：日志分析</h4><h2 id="第4章-知识类：数据库安全基础"><a href="#第4章-知识类：数据库安全基础" class="headerlink" title="第4章 知识类：数据库安全基础"></a>第4章 知识类：数据库安全基础</h2><h3 id="4-1-知识体：关系型数据库"><a href="#4-1-知识体：关系型数据库" class="headerlink" title="4.1 知识体：关系型数据库"></a>4.1 知识体：关系型数据库</h3><h4 id="4-1-1-知识域：MsSQL数据库"><a href="#4-1-1-知识域：MsSQL数据库" class="headerlink" title="4.1.1 知识域：MsSQL数据库"></a>4.1.1 知识域：MsSQL数据库</h4><h4 id="4-1-2-知识域：MySQL数据库"><a href="#4-1-2-知识域：MySQL数据库" class="headerlink" title="4.1.2 知识域：MySQL数据库"></a>4.1.2 知识域：MySQL数据库</h4><h4 id="4-1-3-知识域：Oracle-数据库"><a href="#4-1-3-知识域：Oracle-数据库" class="headerlink" title="4.1.3 知识域：Oracle 数据库"></a>4.1.3 知识域：Oracle 数据库</h4><h3 id="4-2-知识体：非关系型数据库"><a href="#4-2-知识体：非关系型数据库" class="headerlink" title="4.2 知识体：非关系型数据库"></a>4.2 知识体：非关系型数据库</h3><h4 id="4-2-1-知识域：Redis数据库"><a href="#4-2-1-知识域：Redis数据库" class="headerlink" title="4.2.1 知识域：Redis数据库"></a>4.2.1 知识域：Redis数据库</h4>]]></content>
       
       
+      <categories>
+          
+          <category> pte </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> pte 安全 </tag>
+            <tag> pte </tag>
             
         </tags>
       
@@ -37,8 +57,8 @@
     
     <entry>
       <title>我的第一篇博客</title>
-      <link href="2020/11/17/wo-de-di-yi-pian-bo-ke/"/>
-      <url>2020/11/17/wo-de-di-yi-pian-bo-ke/</url>
+      <link href="posts/f929.html"/>
+      <url>posts/f929.html</url>
       
         <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><ul><li>核心</li></ul><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.baidu.com/">www.baidu.com</a></p>]]></content>
       
@@ -56,16 +76,16 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="2020/11/17/hello-world/"/>
-      <url>2020/11/17/hello-world/</url>
+      <link href="posts/3eeb.html"/>
+      <url>posts/3eeb.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
         <tags>
             
-            <tag> hello,haha </tag>
+            <tag> hello </tag>
             
         </tags>
       
