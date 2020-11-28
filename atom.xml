@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-28T08:55:10.515Z</updated>
+  <updated>2020-11-28T09:00:09.002Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>渗透测试之常见shell反弹姿势</title>
+    <title>渗透测试之常见的shell反弹</title>
     <link href="http://example.com/posts/b956.html"/>
     <id>http://example.com/posts/b956.html</id>
     <published>2020-11-28T08:49:03.000Z</published>
-    <updated>2020-11-28T08:55:10.515Z</updated>
+    <updated>2020-11-28T09:00:09.002Z</updated>
     
     
       
